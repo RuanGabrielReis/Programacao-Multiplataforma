@@ -29,15 +29,34 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>
 
+        <label for="condicoes">Você tem alguma dessas condições especiais?</label>
+        <select name="condicoes" id="condicoes">
+            <optgroup label="Condições físicas">
+                <option value="visão">Míope</option>
+                <option value="cadeirante">Cadeirante</option>
+            </optgroup>
+            <optgroup label="Condições psicológicas">
+                <option value="autismo">Autismo</option>
+                <option value="depressão">Depressão</option>
+            </optgroup>
+        </select>
+        
+
         <h2>Materias</h2>
 
         <h3>Biologia</h3>
 
-        <p>1. qual desses bichos nao tem perna?</p>
-        <label><input type="radio" name="biologia1" value="a"> (a) cobra</label><br>
-        <label><input type="radio" name="biologia1" value="b"> (b) girafa</label><br>
-        <label><input type="radio" name="biologia1" value="c"> (c) lagarto</label><br><br>
-
+        <label for="biologia1">1. qual desses bichos nao tem perna?</label>
+        <select name="biologia1" id="biologia1">
+            <optgroup label="Animais terrestres">
+                <option value="cobra">cobra</option>
+                <option value="elefante">elefante</option>
+            </optgroup>
+            <optgroup label="Animais aquaticos">
+                <option value="jacare">jacaré</option>
+                <option value="pinguim">pinguim</option>
+            </optgroup>
+        </select>
         <p>2. qual desses vive na agua?</p>
         <label><input type="radio" name="biologia2" value="a"> (a) peixe</label><br>
         <label><input type="radio" name="biologia2" value="b"> (b) cachorro</label><br>
@@ -50,10 +69,17 @@
 
         <h3>Matematica</h3>
 
-        <p>1. quanto é 2 + 2?</p>
-        <label><input type="radio" name="matematica1" value="a"> (a) 3</label><br>
-        <label><input type="radio" name="matematica1" value="b"> (b) 4</label><br>
-        <label><input type="radio" name="matematica1" value="c"> (c) 5</label><br><br>
+        <label for="matematica1">1. quanto é 2 + 2?</label>
+        <select name="matematica1" id="matematica1">
+            <optgroup label="Números positivos">
+                <option value="6">6</option>
+                <option value="4">4</option>
+            </optgroup>
+            <optgroup label="Números negativos">
+                <option value="-6">-6</option>
+                <option value="-2">-2</option>
+            </optgroup>
+        </select>
 
         <p>2. quanto é 5 - 2?</p>
         <label><input type="radio" name="matematica2" value="a"> (a) 2</label><br>
