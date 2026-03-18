@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mostrarDados() {
+            const nome = "Ruan Gabriel";
+            const sobrenome = "Reis";
+            let idade = 18;
+            let peso = 62;
+            let altura = 1.65;
+
+            alert("Seu nome é "+ nome+ " "+ sobrenome+ ". Você tem "+ idade+ " anos. "+ peso+ "kg e "+ altura+ " de altura.");
+            document.write("Seu nome é ", nome, " ", sobrenome, ". Você tem ", idade, " anos. ", peso, "kg e ", altura, " de altura.");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="mostrarDados()">Exibir valores.</button>
+    <button onclick="window.print()">Imprimir.</button>
+    
+</body>
+</html>
