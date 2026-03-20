@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function operacaoMatVisibilidade(){
+            operacao = parseInt(document.getElementById("codigo").value);
+
+            switch (operacao) {
+                case 1: 
+                    //let raiz = prompt("Qual número você quer descobrir a raiz?");
+                    //let quadrado = Math.sqrt(raiz);
+                    //document.write("A raiz quadrada é " + quadrado);
+                    document.getElementById("labelN1").style.display = "";
+                    document.getElementById("n1").style.display = "";
+                    document.getElementById("labelN2").style.display = "none";
+                    document.getElementById("n2").style.display = "none";
+                    document.getElementById("calcular").style.display = "";
+        
+                    break;
+                case 2:
+                    //let n1 = prompt("Qual número será a base?");
+                    //let n2 = prompt("Qual número será o expoente?");
+                    //let poten = n1**n2;
+                    //document.write("O resultado da exponenciação é " + poten);
+                    document.getElementById("labelN1").style.display = "";
+                    document.getElementById("n1").style.display = "";
+                    document.getElementById("labelN2").style.display = "";
+                    document.getElementById("n2").style.display = "";
+                    document.getElementById("calcular").style.display = "";
+        
+                    break;
+                case 3:
+                    //let a = parseInt(prompt("Qual o valor de a?"));
+                    //let b = parseInt(prompt("Qual o valor de b?"));
+                    //let resultado = (a**2)+Math.sqrt(a+b);
+                    //document.write("O resultado é " + resultado);
+                    document.getElementById("labelN1").style.display = "";
+                    document.getElementById("n1").style.display = "";
+                    document.getElementById("labelN2").style.display = "";
+                    document.getElementById("n2").style.display = "";
+                    document.getElementById("calcular").style.display = "";
+        
+                    break;
+                default:
+                    alert("Código inválido.");
+                    break;
+            }
+        }
+
+        function operacaoMat(){
+            operacao = parseInt(document.getElementById("codigo").value);
+
+            switch (operacao) {
+                case 1: 
+                    let n1 = parseInt(document.getElementById("n1").value);
+                    let quadrado = Math.sqrt(n1);
+                    document.getElementById("resultado").innerHTML = "O resultado é " + quadrado;
+                    
+                    break;
+                case 2:
+                    let base = parseInt(document.getElementById("n1").value);
+                    let expoente = parseInt(document.getElementById("n2").value);
+                    let poten = base**expoente;
+                    document.getElementById("resultado").innerHTML = "O resultado da exponenciação é " + poten;
+                    break;
+                case 3:
+                    let a = parseInt(document.getElementById("n1").value);
+                    let b = parseInt(document.getElementById("n2").value);
+                    let resultado = (a**2)+Math.sqrt(a+b);
+                    document.getElementById("resultado").innerHTML = "O resultado é " + resultado;
+                    
+                    break;
+                default:
+                    alert("Código inválido.");
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Escolha uma opção de operação matemática:</h1>
+    <table border="1">
+        <tr>
+            <th>Cod</th>
+            <th>Operação</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Raiz quadrada</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Exponenciação</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>a²+√(a+b)</td>
+        </tr>
+    </table>
+    <br>
+    <label for="codigo">Cod:</label>
+    <input type="text" id="codigo">
+    <button onclick="operacaoMatVisibilidade()"> Selecionar </button>
+    <br>
+    <br>
+    <label for="n1" id="labelN1">Digite o primeiro valor:</label>
+    <input type="text" id="n1">
+    <br>
+    <label for="n2" id="labelN2">Digite o primeiro valor:</label>
+    <input type="text" id="n2">
+    <br>
+    <button id="calcular" onclick="operacaoMat()">Calcular</button>
+    <p id="resultado"></p>
+    <script>
+        document.getElementById("labelN1").style.display = "none";
+        document.getElementById("n1").style.display = "none";
+        document.getElementById("labelN2").style.display = "none";
+        document.getElementById("n2").style.display = "none";
+        document.getElementById("calcular").style.display = "none";
+        
+    </script>
+</body>
+</html>
