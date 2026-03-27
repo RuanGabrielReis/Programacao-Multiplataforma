@@ -1,145 +1,129 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário para ENEM</title>
+    <title>formulario para enem</title>
 </head>
 <body>
-    <h1>Formulario para ENEM</h1>
-    <form action="#" method="post">
 
-        <h2>Dados pessoais</h2>
+<h1>formulario para enem</h1>
 
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required><br><br>
+<form id="formEnem">
 
-        <label for="data_nascimento">Data de nascimento:</label>
-        <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
+    <h2>dados pessoais</h2>
 
-        <label for="idade">Idade:</label>
-        <input type="number" id="idade" name="idade" required><br><br>
+    <input type="text" name="nome" placeholder="nome" required><br><br>
+    <input type="date" name="data_nascimento" required><br><br>
+    <input type="number" name="idade" placeholder="idade" required><br><br>
+    <input type="tel" name="telefone" placeholder="telefone" required><br><br>
+    <input type="text" name="cpf" placeholder="cpf" required><br><br>
+    <input type="email" name="email" placeholder="email" required><br><br>
 
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required><br><br>
+    <h2>materias</h2>
 
-        <label for="cpf">CPF:</label>
-        <input type="text" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" required><br><br>
+    <h3>ciencias</h3>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+    <!--quando value="c", a alternativa é correta. quando value="e", a alternativa é errada-->
 
-        <label for="condicoes">Você tem alguma dessas condições especiais?</label>
-        <select name="condicoes" id="condicoes">
-            <optgroup label="Condições físicas">
-                <option value="visão">Míope</option>
-                <option value="cadeirante">Cadeirante</option>
-            </optgroup>
-            <optgroup label="Condições psicológicas">
-                <option value="autismo">Autismo</option>
-                <option value="depressão">Depressão</option>
-            </optgroup>
-        </select>
-        
+    <p>1. qual desses nao tem perna?</p>
+    <label><input type="radio" name="ciencias1" value="c"> cobra</label><br>
+    <label><input type="radio" name="ciencias1" value="e"> elefante</label><br>
+    <label><input type="radio" name="ciencias1" value="e"> cavalo</label><br><br>
 
-        <h2>Materias</h2>
+    <p>2. qual desses vive na agua?</p>
+    <label><input type="radio" name="ciencias2" value="c"> peixe</label><br>
+    <label><input type="radio" name="ciencias2" value="e"> cachorro</label><br>
+    <label><input type="radio" name="ciencias2" value="e"> gato</label><br><br>
 
-        <h3>Biologia</h3>
+    <h3>matematica</h3>
 
-        <label for="biologia1">1. qual desses bichos nao tem perna?</label>
-        <select name="biologia1" id="biologia1">
-            <optgroup label="Animais terrestres">
-                <option value="cobra">cobra</option>
-                <option value="elefante">elefante</option>
-            </optgroup>
-            <optgroup label="Animais aquaticos">
-                <option value="jacare">jacaré</option>
-                <option value="pinguim">pinguim</option>
-            </optgroup>
-        </select>
-        <p>2. qual desses vive na agua?</p>
-        <label><input type="radio" name="biologia2" value="a"> (a) peixe</label><br>
-        <label><input type="radio" name="biologia2" value="b"> (b) cachorro</label><br>
-        <label><input type="radio" name="biologia2" value="c"> (c) galinha</label><br><br>
+    <p>1. quanto e 2 + 2?</p>
+    <label><input type="radio" name="matematica1" value="c"> 4</label><br>
+    <label><input type="radio" name="matematica1" value="e"> 6</label><br>
+    <label><input type="radio" name="matematica1" value="e"> 5</label><br><br>
 
-        <p>3. qual parte da planta fica debaixo da terra?</p>
-        <label><input type="radio" name="biologia3" value="a"> (a) raiz</label><br>
-        <label><input type="radio" name="biologia3" value="b"> (b) folha</label><br>
-        <label><input type="radio" name="biologia3" value="c"> (c) flor</label><br><br>
+    <p>2. quanto e 5 - 2?</p>
+    <label><input type="radio" name="matematica2" value="c"> 3</label><br>
+    <label><input type="radio" name="matematica2" value="e"> 4</label><br>
+    <label><input type="radio" name="matematica2" value="e"> 2</label><br><br>
 
-        <h3>Matematica</h3>
+    <p>3. quanto e 3 x 3?</p>
+    <label><input type="radio" name="matematica3" value="c"> 9</label><br>
+    <label><input type="radio" name="matematica3" value="e"> 6</label><br>
+    <label><input type="radio" name="matematica3" value="e"> 12</label><br><br>
 
-        <label for="matematica1">1. quanto é 2 + 2?</label>
-        <select name="matematica1" id="matematica1">
-            <optgroup label="Números positivos">
-                <option value="6">6</option>
-                <option value="4">4</option>
-            </optgroup>
-            <optgroup label="Números negativos">
-                <option value="-6">-6</option>
-                <option value="-2">-2</option>
-            </optgroup>
-        </select>
+    <h3>portugues</h3>
 
-        <p>2. quanto é 5 - 2?</p>
-        <label><input type="radio" name="matematica2" value="a"> (a) 2</label><br>
-        <label><input type="radio" name="matematica2" value="b"> (b) 3</label><br>
-        <label><input type="radio" name="matematica2" value="c"> (c) 4</label><br><br>
+    <p>1. qual e o plural de casa?</p>
+    <label><input type="radio" name="portugues1" value="c"> casas</label><br>
+    <label><input type="radio" name="portugues1" value="e"> casaes</label><br>
+    <label><input type="radio" name="portugues1" value="e"> casar</label><br><br>
 
-        <p>3. quanto é 3 x 3?</p>
-        <label><input type="radio" name="matematica3" value="a"> (a) 6</label><br>
-        <label><input type="radio" name="matematica3" value="b"> (b) 9</label><br>
-        <label><input type="radio" name="matematica3" value="c"> (c) 12</label><br><br>
+    <p>2. qual e o contrario de alto?</p>
+    <label><input type="radio" name="portugues2" value="c"> baixo</label><br>
+    <label><input type="radio" name="portugues2" value="e"> grande</label><br>
+    <label><input type="radio" name="portugues2" value="e"> forte</label><br><br>
 
-        <p>4. quanto é 10 dividido por 2?</p>
-        <label><input type="radio" name="matematica4" value="a"> (a) 2</label><br>
-        <label><input type="radio" name="matematica4" value="b"> (b) 5</label><br>
-        <label><input type="radio" name="matematica4" value="c"> (c) 8</label><br><br>
+    <p>3. qual e o feminino de menino?</p>
+    <label><input type="radio" name="portugues3" value="c"> menina</label><br>
+    <label><input type="radio" name="portugues3" value="e"> meninoa</label><br>
+    <label><input type="radio" name="portugues3" value="e"> menine</label><br><br>
 
-        <p>5. qual numero vem depois do 7?</p>
-        <label><input type="radio" name="matematica5" value="a"> (a) 6</label><br>
-        <label><input type="radio" name="matematica5" value="b"> (b) 8</label><br>
-        <label><input type="radio" name="matematica5" value="c"> (c) 9</label><br><br>
+    <h3>historia</h3>
 
-        <h3>Portugues</h3>
+    <p>1. o brasil foi descoberto em que ano?</p>
+    <label><input type="radio" name="historia1" value="c"> 1500</label><br>
+    <label><input type="radio" name="historia1" value="e"> 1800</label><br>
+    <label><input type="radio" name="historia1" value="e"> 2000</label><br><br>
 
-        <p>1. escreva uma palavra com a letra a</p>
-        <input type="text" name="portugues1"><br><br>
+    <p>2. quem foi o primeiro presidente do brasil?</p>
+    <label><input type="radio" name="historia2" value="c"> deodoro da fonseca</label><br>
+    <label><input type="radio" name="historia2" value="e"> tiririca</label><br>
+    <label><input type="radio" name="historia2" value="e"> pedro alvares cabral</label><br><br>
 
-        <p>2. escreva o plural de casa</p>
-        <input type="text" name="portugues2"><br><br>
+    <button type="button" onclick="corrigir()">enviar</button>
 
-        <p>3. escreva uma cor</p>
-        <input type="text" name="portugues3"><br><br>
+</form>
 
-        <p>4. escreva o contrario de alto</p>
-        <input type="text" name="portugues4"><br><br>
+<h2 id="resultado"></h2>
 
-        <p>5. escreva o feminino de menino</p>
-        <input type="text" name="portugues5"><br><br>
+<script>
+function corrigir() {
 
-        <p>6. escreva uma fruta</p>
-        <input type="text" name="portugues6"><br><br>
+    let resultado = {portugues: 0, matematica: 0, ciencias: 0, historia: 0};
 
-        <h3>Historia</h3>
+    let perguntas = ["ciencias1","ciencias2","matematica1","matematica2","matematica3","portugues1","portugues2","portugues3","historia1","historia2"];
 
-        <p>1. o brasil foi descoberto em que ano?</p>
-        <label><input type="checkbox" name="historia1" value="a"> (a) 1500</label><br>
-        <label><input type="checkbox" name="historia1" value="b"> (b) 1800</label><br>
-        <label><input type="checkbox" name="historia1" value="c"> (c) 2000</label><br><br>
+    for (let i in perguntas) {
+        let nome = perguntas[i];
+        let opcoes = document.getElementsByName(nome);
+        for (let opcao in opcoes) {
+            if (opcoes[opcao].checked) {
+                if (opcoes[opcao].value === "c") {
+                    if (nome.includes("portugues")){
+                        resultado.portugues++;
+                    } else if (nome.includes("matematica")) {
+                        resultado.matematica++;
+                    } else if (nome.includes("ciencias")) {
+                        resultado.ciencias++;
+                    }else if (nome.includes("historia")) {
+                        resultado.historia++;
+                    }
+                }
+            }
+        }
+    }
 
-        <p>2. quem foi o primeiro presidente do brasil?</p>
-        <label><input type="checkbox" name="historia2" value="a"> (a) deodoro da fonseca</label><br>
-        <label><input type="checkbox" name="historia2" value="b"> (b) tiririca</label><br>
-        <label><input type="checkbox" name="historia2" value="c"> (c) pedro alvares cabral</label><br><br>
+    let total = resultado.portugues + resultado.matematica + resultado.ciencias + resultado.historia;
 
-        <p>3. o brasil foi colonia de qual pais?</p>
-        <label><input type="checkbox" name="historia3" value="a"> (a) portugal</label><br>
-        <label><input type="checkbox" name="historia3" value="b"> (b) argentina</label><br>
-        <label><input type="checkbox" name="historia3" value="c"> (c) mexico</label><br><br>
-
-        <button type="submit">Enviar</button>
-
-    </form>
+    document.getElementById("resultado").innerHTML =
+        "portugues: " + resultado.portugues + "<br>" +
+        "matematica: " + resultado.matematica + "<br>" +
+        "ciencias: " + resultado.ciencias + "<br>" +
+        "historia: " + resultado.historia + "<br><br>" +
+        "total: " + total;
+}
+</script>
 </body>
 </html>
