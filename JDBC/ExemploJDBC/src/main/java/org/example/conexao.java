@@ -11,7 +11,7 @@ public class conexao {
             return DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/escola",
                     "root",
-                    "mysqlfatec"
+                    ""
             );
         }catch(SQLException e) {
             JOptionPane.showMessageDialog(null,"Erro na conexão!");
