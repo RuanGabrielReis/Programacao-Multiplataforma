@@ -10,5 +10,9 @@ public class Main {
         int idade = Integer.parseInt(JOptionPane.showInputDialog("Digite a idade: "));
         Aluno aluno = new Aluno(nome,idade);
         alunoDAO.cadastrar(aluno);
+
+        String paramQuery = JOptionPane.showInputDialog("Digite um nome para buscar: ");
+
+        alunoDAO.consultar(paramQuery);
     }
 }
