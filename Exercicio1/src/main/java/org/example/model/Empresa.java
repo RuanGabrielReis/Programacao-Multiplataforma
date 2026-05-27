@@ -12,6 +12,8 @@ public class Empresa {
         this.endereco = endereco;
     }
 
+    public Empresa() {}
+
     public int getId() {
         return id;
     }
